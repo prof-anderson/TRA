@@ -2,8 +2,8 @@ Package: TRA
 Type: Package
 Title: Technology, Research, and Analytics
 Version: 0.1.0
-Author: Timothy R. Anderson
-Maintainer: Timothy R. Anderson <tim.anderson@pdx.edu>
+Authors@R: person("Timothy", "Anderson", email = "tim.anderson@pdx.edu",
+  role = c("aut", "cre"))
 Description: Miscellaneous functions for doing DEA and other analyses.
 License: What license is it under?
 Encoding: UTF-8
