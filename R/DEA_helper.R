@@ -4,7 +4,7 @@
 ## ---- poscolfunct ----
 # Accepts a dataframe and returns only columns that do not sum to zero.
 
-library(DiagrammeR)
+# library(DiagrammeR)
 
 #' Filters Out Zero Columns
 #'
