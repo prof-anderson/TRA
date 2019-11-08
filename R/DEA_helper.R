@@ -52,6 +52,7 @@ DEAnames<-function(NX, NY, ND) {
                  SXnames=SXnames,
                  SYnames=SYnames,
                  Lambdanames=Lambdanames)
+# testing branches
 
   return(allnames)
 }
