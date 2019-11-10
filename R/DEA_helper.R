@@ -74,6 +74,11 @@ DEAnames<-function(NX, NY, ND) {
 #' DrawIOdiagram (c("X1 (FTE)" ), c("Y1 ($M)"), '"\nBCC-IO\n "')
 DrawIOdiagram<-function(Xnames="1",Ynames="1", Modeldescrip="DEA") {
 
+  if(is.matrix(Xnames)){Xnames<-colnames(Xnames)}
+  if(is.matrix(Ynames)){Ynames<-colnames(Ynames)}
+     # If a matrix is passed instead of a list of names,
+     #   use the column names.
+
   a <- "'"
 
   NX <- lengths(Xnames)     # Number of inputs
