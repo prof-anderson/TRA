@@ -76,8 +76,12 @@ DrawIOdiagram<-function(Xnames="1",Ynames="1", Modeldescrip="DEA") {
 
   if(is.matrix(Xnames)){Xnames<-colnames(Xnames)}
   if(is.matrix(Ynames)){Ynames<-colnames(Ynames)}
-     # If a matrix is passed instead of a list of names,
-     #   use the column names.
+
+  # Two ways to call the function.  User can pass a list of inputs
+  #    inputs and outputs that may include more details
+  #    than might be used for short input output names.
+  # The user may also pass the actual input output data and then
+  #    the column names are used for the IO diagram.
 
   a <- "'"
 
