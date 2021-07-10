@@ -13,14 +13,18 @@
 #'
 #' @keywords datasets
 #'
-#' @references Moore et al. (2013) Genetics 195:1077-1086
-#' (\href{https://www.ncbi.nlm.nih.gov/pubmed/23979570}{PubMed})
+#' @references Anderson, Daim, and Lavoie, “Measuring the Efficiency of University Technology Transfer,” Technovation, (2007), pp. 306-18.
 #'
-#' @source \href{https://phenome.jax.org/projects/Moore1b}{QTL Archive}
+#' (\href{https://www.sciencedirect.com/science/article/abs/pii/S0166497206001076}{Elsevier})
+#'
 #'
 #' @examples
-#' data(grav)
-#' times <- attr(grav, "time")
-#' phe <- grav$pheno
-#' \donttest{iplotCurves(phe, times)}
-"grav"
+#' colnames(univ_lic_2007) <- c("University",
+#'                              "LicInc",
+#'                              "LicOpt",
+#'                              "Startup",
+#'                              "PatFile",
+#'                              "PatIss",
+#'                              "Spend")
+#' head(univ_lic_2007[,1:4])
+"univ_lic_2007"
