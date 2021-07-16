@@ -1,6 +1,6 @@
 #' Malmquist Productivity Index Data
 #'
-#' 2D data for demonstrating Malmquist Producitivity Index analysis
+#' 2D data for demonstrating Malmquist Productivity Index analysis
 #'
 #'
 #' @docType data

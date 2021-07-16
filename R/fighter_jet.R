@@ -33,4 +33,4 @@
 #'                       "Mach (Y3)",
 #'                       "BVRM (Y4)")
 #' head(fj_data)
-"fj_data"
+"fighter_jet"
