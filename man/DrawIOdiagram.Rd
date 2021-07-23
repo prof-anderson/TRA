@@ -20,5 +20,5 @@ Input-Output Diagram as PNG
 Draw DEA Input-Output Diagram
 }
 \examples{
-DrawIOdiagram (c("X1 (FTE)" ), c("Y1 ($M)"), '"\\nBCC-IO\\n "')
+DrawIOdiagram (c("X1 (FTE)" ), c("Y1 ($M)"), '"\nBCC-IO\n "')
 }
