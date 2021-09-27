@@ -4,8 +4,6 @@
 ## ---- poscolfunct ----
 # Accepts a dataframe and returns only columns that do not sum to zero.
 
-# library(DiagrammeR)
-
 #' Filters Out Zero Columns
 #'
 #' @param df matrix
@@ -72,6 +70,8 @@ DEAnames<-function(NX, NY, ND) {
 #' @examples
 #' DrawIOdiagram (c("X1 (FTE)" ), c("Y1 ($M)"), '"\nBCC-IO\n "')
 DrawIOdiagram<-function(Xnames="1",Ynames="1", Modeldescrip="DEA") {
+
+  library(DiagrammeR)
 
   a <- "'"
 
