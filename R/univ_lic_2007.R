@@ -2,8 +2,7 @@
 #'
 #' Data from the Association of University Technology Managers
 #' of 50 universities on research spending along with outcomes
-#' such licensing income
-#' increments over eight hours.
+#' such as licensing income and startups formed.
 #'
 #' @docType data
 #'
