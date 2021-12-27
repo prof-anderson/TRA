@@ -121,7 +121,7 @@ DrawIOdiagram<-function(Xnames="1",Ynames="1", Modeldescrip="DEA") {
     fontname = Helvetica]
     ", nodelabels, "
 
-    node [shape = box, fillcolor = green,
+    node [shape = box, style=filled, color=lightgrey,
     fontname = Helvetica]
     ", Modellabel, "
 
