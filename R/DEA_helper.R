@@ -46,7 +46,8 @@ DEAnames<-function(NX, NY, ND) {
   Unames   <- lapply(list(rep("u",NY)),paste0,1:NY)   # Output weight names: u1, ...
   SXnames  <- lapply(list(rep("sx",NX)),paste0,1:NX) # Input slack names: sx1, ...
   SYnames  <- lapply(list(rep("sy",NY)),paste0,1:NY) # Output slack names: sy1, ...
-  Lambdanames<- lapply(list(rep("L_",ND)),paste0,LETTERS[1:ND])
+  Lambdanamesbyletter <- lapply(list(rep("L_",ND)),paste0,LETTERS[1:ND])
+  Lambdanamesbynumber <- lapply(list(rep("L_",ND)),paste0,1:ND)
 
   # These are names using LaTeX
 
@@ -69,14 +70,16 @@ DEAnames<-function(NX, NY, ND) {
                  Unames=Unames,
                  SXnames=SXnames,
                  SYnames=SYnames,
-                 Lambdanames=Lambdanames,
+                 Lambdanamesbyletter=Lambdanamesbyletter,
+                 Lambdanamesbynumber=Lambdanamesbynumber,
                  XnamesLX=Xnames,
                  YnamesLX=Ynames,
                  VnamesLX=Vnames,
                  UnamesLX=Unames,
                  SXnamesLX=SXnames,
                  SYnamesLX=SYnames,
-                 LambdanamesLX=Lambdanames)
+                 LambdanamesbyletterLX=LambdanamesbyletterLX,
+                 LambdanamesbynumberLX=LambdanamesbynumberLX)
 
   return(allnames)
 }
