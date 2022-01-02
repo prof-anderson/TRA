@@ -34,6 +34,7 @@ poscol<-function(df) {
 #' DEAnames (1,2,3) # 1-input, 2-output, 3 DMUs
 DEAnames<-function(NX, NY, ND) {
 
+  library(DiagrammeR)
   DMUnamesbyletter <- list(c(LETTERS[1:ND]))          # DMU names: A, B, ...
   DMUnamesbynumber <- lapply(list(rep("DMU ",ND)),paste0,1:ND)
         # DMU names: DMU 1, DMU 2, DMU 3 ...
