@@ -14,8 +14,9 @@
 #'
 #' @examples
 #' poscol(matrix(c(1,2,0,0,5,0),ncol=3)) # Filters 0, 0 column
-#' poscol(matrix(c(1,2,0,0.000001,5,0),ncol=3)) # Filters 0, 0 column
-#' poscol(matrix(c(1,2,0,-0.000001,5,0),ncol=3)) # Filters 0, 0 column
+#' poscol(matrix(c(1,2,0,0.000001,5,0),ncol=3),cutoff=0) # Filters 0, small column
+#' poscol(matrix(c(1,2,0,0.000001,5,0),ncol=3),cutoff=0.00001) # Filters 0, small column
+#' poscol(matrix(c(1,2,0,-0.000001,5,0),ncol=3)) # Filters 0, small negative column
 poscol<-function(df, cutoff=0) {
   positive.columns <- df[, colSums(df) >= cutoff]
   return (positive.columns)
