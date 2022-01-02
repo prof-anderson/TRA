@@ -7,14 +7,15 @@
 #' Filters Out Zero Columns
 #'
 #' @param df matrix
+#' @param cutoff Cutoff value for passing columns
 #'
 #' @return df matrix w/o all zero columns
 #' @export
 #'
 #' @examples
 #' poscol(matrix(c(1,2,0,0,5,0),ncol=3)) # Filters 0, 0 column
-poscol<-function(df) {
-  positive.columns <- df[, colSums(df) >= 0]
+poscol<-function(df, cutoff=0) {
+  positive.columns <- df[, colSums(df) >= cutoff]
   return (positive.columns)
 }
 
@@ -34,7 +35,6 @@ poscol<-function(df) {
 #' DEAnames (1,2,3) # 1-input, 2-output, 3 DMUs
 DEAnames<-function(NX, NY, ND) {
 
-  library(DiagrammeR)
   DMUnamesbyletter <- list(c(LETTERS[1:ND]))          # DMU names: A, B, ...
   DMUnamesbynumber <- lapply(list(rep("DMU ",ND)),paste0,1:ND)
         # DMU names: DMU 1, DMU 2, DMU 3 ...
@@ -102,7 +102,6 @@ DEAnames<-function(NX, NY, ND) {
 #' DrawIOdiagram (c("X1 (FTE)" ), c("Y1 ($M)"), '"\nBCC-IO\n "')
 DrawIOdiagram<-function(Xnames="1",Ynames="1", Modeldescrip="DEA") {
 
-  library(DiagrammeR)
 
   a <- "'"
 
@@ -164,4 +163,3 @@ DrawIOdiagram<-function(Xnames="1",Ynames="1", Modeldescrip="DEA") {
 
   return (IOGraph)
 }
-
