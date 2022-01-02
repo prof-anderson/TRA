@@ -5,7 +5,7 @@
 \alias{univ_lic_2007}
 \title{University Licensing Income Data}
 \format{
-An object of class \code{"cross"}; see \code{\link[qtl]{read.cross}}.
+Dataframe
 }
 \usage{
 data(univ_lic_2007)
@@ -13,7 +13,7 @@ data(univ_lic_2007)
 \description{
 Data from the Association of University Technology Managers
 of 50 universities on research spending along with outcomes
-such as licensing income and startups.
+such as licensing income and startups formed.
 }
 \examples{
 colnames(univ_lic_2007) <- c("University",

@@ -4,10 +4,12 @@
 \alias{poscol}
 \title{Filters Out Zero Columns}
 \usage{
-poscol(df)
+poscol(df, cutoff = 0)
 }
 \arguments{
 \item{df}{matrix}
+
+\item{cutoff}{Cutoff value for passing columns}
 }
 \value{
 df matrix w/o all zero columns

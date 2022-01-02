@@ -5,14 +5,17 @@
 \alias{fighter_jet}
 \title{US Fighter Jet Data}
 \format{
-An object of class \code{"cross"}; see \code{\link[qtl]{read.cross}}.
+A dataframe object.
 }
 \usage{
 data(fighter_jet)
 }
 \description{
-Data used for technology forecasting of US fighter jet aircrafts.
-Consists of aircraft from 1944 to 1982.
+Data used for technology forecasting of US fighter jet aircraft.
+Consists of aircraft from 1944 to 1982.  The dataset includes 19 aircraft
+with the name, year of introduction, and 17 characteristics.
+Data was originally collected by Dr. Joseph Martino and used in his
+publications such as The Technology Forecasting Handbook.
 }
 \examples{
 fj_data <- dplyr::select(fighter_jet,
