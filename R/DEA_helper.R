@@ -36,6 +36,15 @@ poscol<-function(df, cutoff=0) {
 #'
 #' @examples
 #' DEAnames (1,2,3) # 1-input, 2-output, 3 DMUs
+#' names <- DEAnames(1,2,3)
+#' lambda <- matrix(rep(-1.0, 3^2), nrow=3)
+#' lambda
+#' dimnames (lambda) <- c(list(names$DMUnamesbyletter),
+#'                        list(names$Lambdanamesbyletter))
+#' lambda
+#' dimnames (lambda) <- c(list(names$DMUnamesbynumber),
+#'                        list(names$LambdanamesbynumberLX))
+#' lambda   # Ready to be rendered using LaTeX
 DEAnames<-function(NX, NY, ND) {
 
   DMUnamesbyletter <- list(c(LETTERS[1:ND]))[[1]]          # DMU names: A, B, ...
@@ -76,12 +85,12 @@ DEAnames<-function(NX, NY, ND) {
                  SYnames=SYnames,
                  Lambdanamesbyletter=Lambdanamesbyletter,
                  Lambdanamesbynumber=Lambdanamesbynumber,
-                 XnamesLX=Xnames,
-                 YnamesLX=Ynames,
-                 VnamesLX=Vnames,
-                 UnamesLX=Unames,
-                 SXnamesLX=SXnames,
-                 SYnamesLX=SYnames,
+                 XnamesLX=XnamesLX,
+                 YnamesLX=YnamesLX,
+                 VnamesLX=VnamesLX,
+                 UnamesLX=UnamesLX,
+                 SXnamesLX=SXnamesLX,
+                 SYnamesLX=SYnamesLX,
                  LambdanamesbyletterLX=LambdanamesbyletterLX,
                  LambdanamesbynumberLX=LambdanamesbynumberLX)
 

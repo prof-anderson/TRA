@@ -21,4 +21,13 @@ Generates Generic Names for DEA
 }
 \examples{
 DEAnames (1,2,3) # 1-input, 2-output, 3 DMUs
+names <- DEAnames(1,2,3)
+lambda <- matrix(rep(-1.0, 3^2), nrow=3)
+lambda
+dimnames (lambda) <- c(list(names$DMUnamesbyletter),
+                       list(names$Lambdanamesbyletter))
+lambda
+dimnames (lambda) <- c(list(names$DMUnamesbynumber),
+                       list(names$LambdanamesbynumberLX))
+lambda   # Ready to be rendered using LaTeX
 }
