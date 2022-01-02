@@ -1,7 +1,7 @@
 Package: TRA
 Type: Package
 Title: Technology, Research, and Analytics
-Version: 0.1.6
+Version: 0.1.7
 Authors@R: person("Timothy", "Anderson", email = "tim.anderson@pdx.edu",
   role = c("aut", "cre"))
 Description: Miscellaneous functions for doing DEA and other analyses.
