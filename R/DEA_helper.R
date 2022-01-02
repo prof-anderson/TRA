@@ -14,7 +14,7 @@
 #' @examples
 #' poscol(matrix(c(1,2,0,0,5,0),ncol=3)) # Filters 0, 0 column
 poscol<-function(df) {
-  positive.columns <- df[, colSums(df) != 0]
+  positive.columns <- df[, colSums(df) >= 0]
   return (positive.columns)
 }
 
