@@ -6,7 +6,7 @@ Authors@R: person("Timothy", "Anderson", email = "tim.anderson@pdx.edu",
   role = c("aut", "cre"))
 Description: Miscellaneous functions for doing DEA and other analyses.
 Depends: R (>= 3.5.0)
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports:
