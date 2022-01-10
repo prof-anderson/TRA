@@ -16,7 +16,7 @@ Data on hydraulic fracturing R&D projects.
 \examples{
 library(MultiplierDEA)
 
-resBH<-DeaMultiplierModel(BakerHughesRandD$XBH,
+resBH<-MultiplierDEA::DeaMultiplierModel(BakerHughesRandD$XBH,
                           BakerHughesRandD$YBH,
                           rts = "vrs",
                           orientation="input")

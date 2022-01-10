@@ -10,5 +10,6 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports:
-    DiagrammeR
+    DiagrammeR,
+    MultiplierDEA
 RoxygenNote: 7.1.2
