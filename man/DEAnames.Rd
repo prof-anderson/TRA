@@ -14,7 +14,7 @@ DEAnames(NX, NY, ND)
 \item{ND}{Number of decision making units}
 }
 \value{
-
+Creates a generic set of names that are commonly used by DEA
 }
 \description{
 Generates Generic Names for DEA

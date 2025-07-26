@@ -31,7 +31,7 @@ poscol<-function(df, cutoff=0) {
 #' @param NY Number of outputs
 #' @param ND Number of decision making units
 #'
-#' @return
+#' @return Creates a generic set of names that are commonly used by DEA
 #' @export
 #'
 #' @examples
@@ -148,7 +148,7 @@ DrawIOdiagram<-function(Xnames="1",Ynames="1", Modeldescrip="DEA") {
   )
 
   ##  Plot graph:
-  IOGraph <- DiagrammeR::grViz(
+  IOGraph <- DiagrammeR:::grViz(
     paste0(" digraph Input_Output_Diagram {
 
     # a 'graph' statement
